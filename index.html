@@ -12,6 +12,8 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.11/video.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -45,11 +47,31 @@
       </header>
       <section>
 
-<video width="320" height="240" controls>
+<!-- <video width="320" height="240" controls>
   <source src="file:///Users/muniratalla/Documents/EasyHTML5Video/eh5v.html" type="video/mp4">
 Your browser does not support the video tag.
+</video> -->
+
+<!-- <video id="myVideo" width="600" height="400" controls loop="loop" video controls autoplay>
+  <source src="movies/Intro_loop.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
-      
+ -->
+<video loop id="really-cool-video" class="video-js vjs-default-skin" controls
+ preload="auto" width="640" height="264" poster="really-cool-video-poster.jpg"
+ data-setup='{"controls":false, "autoplay":true, "preload": "auto", "loop":"true" }'>
+  <source src="movies/Intro_loop.mp4" type="video/mp4">
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser
+    that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+</video>
+
+
+<!-- <script type="text/javascript">
+  var vid = document.getElementById("myVideo");
+  vid.loop = true;
+</script> -->
 
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a></h3>
