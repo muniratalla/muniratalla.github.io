@@ -48,6 +48,7 @@ a small {
 .wrapper {
   width:860px;
   margin:0 auto;
+  padding-top: 50px;
 }
 
 blockquote {
@@ -95,10 +96,62 @@ img {
   max-width:100%;
 }
 
+
 header {
   width:270px;
   float:left;
-  position:fixed;
+  position:relative;
+}
+
+/* SETTINGS FOR INDEX HEADER. links to other pages */
+
+/* This is in case we want a white box beaneath text */ 
+.interviewsBox {
+  /*background-color: rgba(255, 255, 255, 0.1);*/
+  padding-top: 40px;
+  height: 500px;
+  width: 400px;
+  margin-left: -50px;
+}
+
+/* This is to position the text within the above box */ 
+.interviewText {
+ margin-left: 20px;
+ padding-top: 20px;
+ padding-right: 20px;
+}
+/*Title*/
+header .interviewsBox h1 {
+  color: black;
+}
+/*Subtitle*/
+header .interviewsBox h3 {
+  color: black;
+}
+
+/* Subtext */ 
+header .interviewsBox .subtext {
+  color:black;
+  font-size: 14px;
+  font-weight: bold;
+  /*background-color: rgba(255, 255, 255, 0.1);;*/
+
+}
+/* interviewee names*/
+header  .view a {
+  font-size:16px;
+  font-weight: bold;
+  display:block;
+  color:black;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  text-align: center;
+  margin-right: 75%;
+  /*background-color: rgba(255, 255, 255, 0.1);*/
+} header .view a:hover  {
+  color:blue;
+  border-color:blue;
 }
 
 header ul {
@@ -152,6 +205,10 @@ header ul li + li + li {
   border-right:none;
   width:89px;
 }
+
+
+
+
 
 header ul a strong {
   font-size:14px;
