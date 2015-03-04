@@ -112,11 +112,13 @@ header {
 
 /* This is in case we want a white box beaneath text */ 
 .interviewsBox {
-  /*background-color: rgba(255, 255, 255, 0.1);*/
-  padding-top: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  /*padding-top: 40px;*/
   height: 500px;
-  width: 400px;
+  width: 900px;
   margin-left: -50px;
+  /*padding-bottom: 50px;*/
+
 }
 
 /* This is to position the text within the above box */ 
@@ -139,7 +141,7 @@ header .interviewsBox .subtext {
   color:black;
   font-size: 14px;
   font-weight: bold;
-  /*background-color: rgba(255, 255, 255, 0.1);;*/
+  background-color: rgba(255, 255, 255, 0.1);;
 
 }
 /* interviewee names*/
