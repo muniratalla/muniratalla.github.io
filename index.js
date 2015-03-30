@@ -4,7 +4,7 @@ $(function() {
 
 
 	if (Modernizr.touch) {
-	    BV.show('assets/fallback.jpg');
+	    BV.show('assets/img/fallback.jpg');
 	} else {
 		BV.show('assets/video/Intro_loop.mp4', {ambient:true});
 	}
