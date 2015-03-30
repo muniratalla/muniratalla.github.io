@@ -1,0 +1,1 @@
+$(function(){var o=new $.BigVideo({container:$("#intro-video")});o.init(),Modernizr.touch?o.show("assets/fallback.jpg"):o.show("assets/video/Intro_loop.mp4",{ambient:!0})});
