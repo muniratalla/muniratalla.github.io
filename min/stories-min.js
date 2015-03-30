@@ -1,1 +1,0 @@
-$(function(){videojs("example_video_1",{width:"300",height:"264"},function(){console.log("hello"),this.play()})});
