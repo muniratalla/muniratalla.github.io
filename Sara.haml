@@ -1,0 +1,108 @@
+%html
+  %head
+    %title Sara
+    / Bootstrap CSS
+    %link{:href => "assets/css/bootstrap.css", :rel => "stylesheet"}
+
+    / Shield Theme Styles
+    %link{:href => "assets/css/shield_theme.css", :rel => "stylesheet"}
+
+
+    / JS needed at first. 
+    %script{:src => "assets/js/jquery.min.js"}
+    %script{:src => "assets/js/modernizr.custom.js", :type => "text/javascript"}
+
+
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+
+    / FONTS
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Raleway:400,300,700", :rel => "stylesheet", :type => "text/css"}/
+
+  %body{"data-offset" => "0", "data-spy" => "scroll", "data-target" => "#navbar-main"}
+    
+    / NAVBAR
+    #navbar-main
+      / Fixed navbar
+      .navbar.navbar-inverse.navbar-fixed-top
+        .container
+          .navbar-header
+            %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+              %span.icon.icon-shield{:style => "font-size:30px; color:#3498db;"}
+            %a.navbar-brand.hidden-xs.hidden-sm{:href => "#home"}
+              %span.icon.icon-shield{:style => "font-size:18px; color:#3498db;"}
+          .navbar-collapse.collapse
+            %ul.nav.navbar-nav
+              %li
+                %a.smoothScroll{:href => "/"} Home
+              %li
+                %a
+                  = '|'
+              %li
+                %a
+                  Stories:
+              %li
+                %a.smoothScroll{:href => "Arnell.html"} Arnell
+              %li
+                %a.smoothScroll{:href => "Bashir.html"} Bashir
+              %li
+                %a.smoothScroll{:href => "Beijan.html"} Beijan
+              %li
+                %a.smoothScroll{:href => "Jerash.html"} Jerash
+              %li
+                %a.smoothScroll{:href => "Sara.html"} Sara
+
+
+    / STORY
+    .person-name.centered
+      %br
+      %br
+      %br
+      %h3 Sara
+      %hr
+    .story{:name => "story"}
+      .col-md-4
+        #story-questions
+          %h4 Click on a question to hear Sara answer it.
+          %a{:href => "javascript:playRange(00,00+18);"} Who are you?
+          %p
+          %a{:href => "javascript:playRange(19,19+71);"} What was it like growing up in Jordan?
+          %p
+          %a{:href => "javascript:playRange(89,231);"} What is the Filipino community in Amman like?
+          %p
+          %a{:href => "javascript:playRange(230,303);"} What challenges have you faced?
+          %p
+          %a{:href => "javascript:playRange(348,387);"} Do you consider yourself Jordanian?
+          %p
+          %a{:href => "javascript:playRange(396,597);"} What is racism like in Jordan?
+          %p
+      .col-md-8
+        #story-video
+          #player{"youtube-vid-id" => "kk7vQCa3hV0"}
+          %br/
+
+
+    / THEME JS
+    %script{:src => "assets/js/bootstrap.min.js", :type => "text/javascript"}
+    %script{:src => "assets/js/retina.js", :type => "text/javascript"}
+    %script{:src => "assets/js/jquery.easing.1.3.js", :type => "text/javascript"}
+    %script{:src => "assets/js/smoothscroll.js", :type => "text/javascript"}
+    %script{:src => "assets/js/jquery-func.js", :type => "text/javascript"}
+
+
+    / BigVideo Dependencies
+    :javascript
+      window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')
+    %script{:src => "assets/js/jquery-ui.js"}
+    %script{:src => "http://vjs.zencdn.net/4.3/video.js"}
+    / BigVideo
+    %script{:src => "assets/js/bigvideo.js"}
+    / Page Javascript
+    %script{:src => "assets/js/scale.fix.js"}
+    %script{:src => "assets/js/youtubeapi.js"}
+
+
+
